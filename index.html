@@ -1,0 +1,440 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Aisha Restraunt</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="image/logo.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    <style>
+        body{
+            font-family: 'montserrat';
+        }
+        .image{
+            height: 37rem;
+        }
+
+        .carousel-caption .header{
+            margin-bottom: 3rem;
+            font-size:2rem;
+        }
+
+        .header-image{
+            width: 35rem;
+            margin-bottom: 2rem;
+        }
+
+        .main-head{
+            font-size: 4rem;
+        }
+
+        @media (max-width: 767px){
+            .image{
+                height: 20rem;
+            }
+
+            .carousel-caption .header{
+                margin-bottom: 4rem;
+                font-size:13px !important;
+            }
+
+            .header-image{
+                width: 12rem;  
+                margin-bottom: 1rem;
+            }
+
+            .main-head{
+                font-size: 1.2rem;
+            }
+
+
+        }
+
+        @media (min-width:768px) and (max-width: 1024px){
+            .carousel-caption .header{
+                font-size: 1.8rem !important;
+                margin-bottom: 5rem;
+            }
+
+            .header-image{
+                width: 25rem;
+            }
+
+            .main-head{
+                font-size: 2.5rem;
+            }
+        }
+        .navbar{
+      position: fixed;
+      width: 100%;
+      background: #fff !important;
+      box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.25);
+      transition: .6s;
+      z-index: 10;
+    }
+
+    
+
+    .navbar-nav{
+      font-family: 'Jost', sans-serif;
+      font-weight: bold;
+    }
+
+    .nav-link{
+      margin-right: 5px;
+    }
+
+    .nav-link:hover{
+      color: rgb(250, 9, 29) !important;
+    }
+
+    nav.sticky{
+      background-color: #fff !important;
+      margin-right: 5px;
+    }
+
+    @media (max-width:768px){
+
+      .navbar{
+        z-index: 10;
+      }
+
+      .navbar-brand .logo-one{
+        margin-left: 5px !important;
+        height: 40px;
+      }
+
+      .icons{
+        margin-bottom: 1rem;
+      }
+
+    }
+
+      /* footer section */
+      footer{
+        background: #000;
+        color: #fff;
+        font-family: 'josefin sans';
+      }
+      .logo2{
+        height:50px; 
+        margin:30px 20px 5px;
+      }
+
+      .content1{
+        margin:20px;
+        font-size: 16px;
+        line-height: 25px;
+        color: #fff;
+        
+      }
+
+      .content2{
+        margin-top: 50px;
+        margin-left: 30px;
+        font-weight: bold;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        display: inline-block;
+        font-family: 'jost';
+        font-size: 12px;
+        letter-spacing: 2px;
+      }
+
+      .icons{
+        margin-left: 14%;
+        margin-top: 4%;
+      }
+
+      .icons .icon-link{
+        color: #fff;
+        margin-right: 10px;
+      }
+
+      .content3{
+        font-size: 15px;
+      }
+
+      .footer2{
+        background: #333;
+        color: grey;
+        padding: 3px;
+        text-align: center;
+        font-family: 'josefin sans';
+      }
+      header.masthead {
+  position: relative;
+  background-color: #343a40;
+  background: url("./img/bg-masthead.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+header.masthead .overlay {
+  position: absolute;
+  background-color: #212529;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+}
+
+header.masthead h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+  }
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+.showcase .showcase-text {
+  padding: 3rem;
+}
+
+.showcase .showcase-img {
+  min-height: 30rem;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .showcase .showcase-text {
+    padding: 7rem;
+  }
+}
+
+.features-icons {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.features-icons .features-icons-item {
+  max-width: 20rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon {
+  height: 7rem;
+}
+
+.features-icons .features-icons-item .features-icons-icon i {
+  font-size: 4.5rem;
+}
+
+.features-icons .features-icons-item:hover .features-icons-icon i {
+  font-size: 5rem;
+}
+
+
+    </style>
+</head>
+  <body style="background: rgb(189, 188, 186);" >
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img class="logo-one" src="image/logo.png" alt="logo one" width="30%">
+        <b><h5 style="color: rgb(247, 15, 15);">Aisha Restraunt</h5></b>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Order Here</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="profile.html"></a>
+          </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="projects.html"></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="image/jio.jpg">Menu</a>
+            </li>
+            
+            
+            
+        </ul>
+      </div>
+    </nav>
+    <br><br><br>
+<!------------------------------------------------------------>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100 image" src="image/res1.jpg" alt="First slide" >
+            <div class="carousel-caption">
+               
+                <h1 class="main-head">Welcome To Aisha</h1>
+                <h3 class="header">Ghar Jaisa Lagta He......</h3>
+                
+              </div>  
+          </div>
+        </div>
+      </div>
+
+      
+      <section class="features-icons bg-light text-center" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <div class="features-icons-icon d-flex">
+                  <i class="icon-screen-desktop m-auto text-primary"></i>
+                </div>
+                <img src="image/use1.png" alt="" width="100%">
+                <h3 style="color: rgb(122, 6, 255);">Online Ordering</h3>
+                <strong><p class="lead mb-0">Online ordering platform prepared to Allows end consumers to order their favorite products online.</p></strong>
+              
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                <div class="features-icons-icon d-flex">
+                  <i class="icon-layers m-auto text-primary"></i>
+                </div>
+                <img src="image/use2.jpg" alt="" width="80%" >
+                <h3 style="color: rgb(122, 6, 255);">Catering</h3>
+                <strong><p class="lead mb-0">Catering is the business of providing food service at a remote site or a site such Restraunt</p></strong>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                <div class="features-icons-icon d-flex">
+                  <i class="icon-check m-auto text-primary"></i>
+                </div>
+                <img src="image/use3.png" alt="" width="100%">
+                <h3 style="color: rgb(122, 6, 255);">Home made food</h3>
+                <strong><p class="lead mb-0">HomeMade is that connects you with  home-based chefs. Find  healthy homemade food at your door.</p></strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <!-- Image Showcases -->
+      <section class="showcase" >
+        <div class="container-fluid p-0">
+          <div class="row no-gutters">
+  
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" >
+              <img src="image/use6.jpeg" alt="" width="100%">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+              <h2 style="color: red;">Delicious Food</h2>
+              <strong><p class="lead mb-0">We've scoured the planet for what we think are 50 of the most delicious foods ever created. For now, feast your eyes and control your drooling, as we reveal some of the world's best foods that can help you make travel plans:</p></strong>
+              <br>
+              <a href="service.html">
+              <strong><center><button type="button" class="btn btn-danger">Read More</button></center></strong>
+            </a>
+            </div>
+          </div>
+          <div  class="row no-gutters">
+            <div class="col-lg-6 text-white showcase-img"  >
+              <img src="image/use5.jpeg" alt="" width="100%">
+            </div>
+            <div class="col-lg-6 my-auto showcase-text">
+              <h2 style="color: red;">Beverage</h2>
+              <b><p class="lead mb-0">  And the focus here is on the drink part -- the best, more refreshing liquids found in destinations around the world. here are the 50 most delicious drinks you can sip, gulp and enjoy:</p></b>
+              <br>
+              <a href="service.html">
+                <strong><center><button type="button" class="btn btn-danger">Read More</button></center></strong>
+            </a>
+              </div>
+          </div>
+          <div class="row no-gutters">
+            <div class="col-lg-6 order-lg-2 text-white showcase-img" >
+              <img src="image/use4.jpg" alt="" width="100%">
+            </div>
+            <div class="col-lg-6 order-lg-1 my-auto showcase-text">
+              <h2 style="color: red;"> Feel the moment...</h2>
+              <strong><p class="lead mb-0">Now a Days Time Is Very Precious. So give small Amount of time to you family make the family bond stronger.You get Extreme enviroment To spend the time to Your family.
+                Book You Table For Spending The Exiting Moment By Clicking Read More....
+              </p></strong>
+              <br>
+              <a href="service.html">
+              <strong><center><button type="button" class="btn btn-danger">Read More</button></center></strong>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+  <!--------------------------------->
+    <!-- Start Footer -->
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <a href="#">
+                <img class="logo2" src="image/logo.png" alt="logo two">
+              </a>
+              <p class="content1" style = "color: #fff">
+                The Aisha Restraunt is situated in Bhubaneswar,Odisha .It Provide Te Extreme Enviroment to you and Your Family.
+              </p>
+            </div>
+
+            <div class="col-md-3 col-sm-6 col-xs-12">
+              <h6 class="content2">Sovam Pradhan</h6>
+              <div class="icons">
+                <a class="icon-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a class="icon-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="icon-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a class="icon-link" href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a><br>
+                <i class="fa fa-envelope" aria-hidden="true"><span style="font-family: 'josefin sans';">sovam121@gmail.com</span></i>
+                
+ +91 7991079624
+  
+              </div><br>
+              
+            </div>
+          </div>
+        </div>
+
+        <div class="footer2">The Aisha Restraunt 
+          &copy;2020<span style="font-family: 'jost';">All Rights Reserved. </span>
+         
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

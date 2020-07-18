@@ -1,0 +1,93 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+.schedule-section{
+  background-color:transparent;
+  background-size: cover;
+  padding: 40px 0;
+}
+.inner-width{
+  width: 100%;
+  max-width: auto;
+  margin: auto;
+  padding: auto;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  color: #EF7215;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: bold
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: black;
+  margin: 10px auto;
+}
+.schedule-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.schedule-box{
+  max-width: auto;
+  padding: 10px;
+  text-align: center;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.schedule-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid black;
+  color: orange;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.schedule-icon i{
+  line-height: 70px;
+  transform: rotate(-45deg);
+  font-size: 26px;
+}
+.schedule-box:hover .schedule-icon{
+  background: #EF7215;
+  color: black;
+}
+.schedule-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.schedule-desc{
+  font-size: 14px;
+}
+
+@media screen and (max-width:960px) {
+  .schedule-box{
+    max-width: 45%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .schedule-box{
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width:480px) {
+  .schedule-box{
+    max-width: 100%;
+  }
+}
